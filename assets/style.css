@@ -1,0 +1,58 @@
+body {
+    background-color:rgb(4, 4, 24);
+    color:darkgray;
+}
+
+/*Remove hyperlinks in lists*/
+li {
+    text-decoration: none;
+}
+
+ul {
+    padding:10px;
+}
+
+/*Navigation Pane*/
+
+header {
+   display: inline-flex; 
+}
+
+.nav-pane {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
+    text-decoration: none;
+} 
+/*navigation pane link functions*/
+li:hover {
+    color:greenyellow;
+}
+
+li:active {
+    color:olive;
+}
+
+/*Navigation Bar Left*/
+.header-section-1 {
+    position: relative;
+    right:auto;
+    margin-left:20px;
+}
+
+.nav-bar {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Navigation Bar Right*/
+.header-section-2 {
+    position: relative;
+    left:150%; /*this will have to be chnaged to adjust for size of icons*/
+    margin-right:20px;
+}
+
+.social {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

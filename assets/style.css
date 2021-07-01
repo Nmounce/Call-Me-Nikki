@@ -10,6 +10,7 @@ li {
 
 ul {
     padding:10px;
+    list-style: none;
 }
 
 /*Navigation Pane*/
@@ -55,4 +56,39 @@ li:active {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+/*Project Cards*/
+
+#featured-project {
+    display: inline-flex;
+    width: 100%;
+}
+
+.featured-image {
+    float: center;
+    margin-left:50%;
+}
+
+.cards {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.card-image {
+    margin-left: 25px;
+}
+
+.card-info {
+    text-align: center;
+    margin-left: 50%;
+}
+
+.card-tools {
+    position:relative;
+    text-align: center;
+    margin-left: 50%px;
+    margin-top: -15px;
 }

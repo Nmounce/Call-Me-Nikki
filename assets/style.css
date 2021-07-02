@@ -1,13 +1,22 @@
 body {
-    background-color:rgb(4, 4, 24);
+    background-color:rgb(11, 9, 12);
     color:darkgray;
 }
 
-/*Remove hyperlinks in lists*/
-li {
-    text-decoration: none;
+h2 {
+    text-align: center;
+    padding-top:200px;
+    padding-bottom: 50px;
+    font-size: 72px;;
 }
 
+a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Remove hyperlinks in lists*/
 ul {
     padding:10px;
     list-style: none;
@@ -16,14 +25,18 @@ ul {
 /*Navigation Pane*/
 
 header {
-   display: inline-flex; 
+   display: flex; 
+   flex-wrap: wrap;
 }
 
 .nav-pane {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
 } 
-/*navigation pane link functions*/
+/*navigation pane link functions*/ /*cant get them to separate*/
 li:hover {
     color:greenyellow;
 }
@@ -33,7 +46,7 @@ li:active {
 }
 
 /*Navigation Bar Left*/
-.header-section-1 {
+.nav-section-1 {
     position: relative;
     right:auto;
     margin-left:20px;
@@ -46,49 +59,144 @@ li:active {
 }
 
 /*Navigation Bar Right*/
-.header-section-2 {
-    position: relative;
-    left:150%; /*this will have to be chnaged to adjust for size of icons*/
-    margin-right:20px;
+.nav-section-2 {
+    text-align: right;
 }
 
-.social {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/*Heading*/
+#cover {
+    position: relative;
+}
+
+h1 {
+    margin-left: 50px;
+    position: absolute;
+    font-family: 'Homemade Apple', cursive;
+}
+
+.heading-image {
+    width:2000px;
+    height: 800px;
+    object-fit: fill;
 }
 
 /*Project Cards*/
 
+/*Featured Card*/
+
 #featured-project {
     display: inline-flex;
     width: 100%;
+    padding-bottom:100px;
+    position: relative;
+}
+
+#featured-project:hover .featured-image {
+    opacity: 0.3;
+}
+
+#featured-project:hover .middle {
+    opacity: 1;
 }
 
 .featured-image {
-    float: center;
-    margin-left:50%;
+    width:1500px;
+    height:500px;
+    padding-left:220px;
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
 }
 
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.feature-info {
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.feature-tools {
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*All other cards*/
 .cards {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 1.5%;
     margin-right: auto;
     width: 30%;
 }
 
 .card-image {
     margin-left: 25px;
+    position: relative;
+    width:500px;
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
 }
 
 .card-info {
-    text-align: center;
-    margin-left: 50%;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .card-tools {
-    position:relative;
-    text-align: center;
-    margin-left: 50%px;
-    margin-top: -15px;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+}
+
+/*About Me*/
+#about-me {
+
+}
+
+.wrap {
+    display: flex;
+}
+
+#bio {
+    display: inline-flex;
+    position: absolute;
+    padding-left: 100px;
+    margin-top:100px;
+}
+
+.pro-pic {
+height: 500px;
+width: 350px;
+margin-left:77px;
+}
+
+.contact-type {
+
+}
+
+.personal-contact {
+    display: inline-flex;
+}
+
+.contact-info {
+    display: inline;
 }

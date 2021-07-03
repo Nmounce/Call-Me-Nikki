@@ -1,13 +1,16 @@
 body {
     background-color:rgb(11, 9, 12);
     color:darkgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2 {
     text-align: center;
-    padding-top:200px;
-    padding-bottom: 50px;
-    font-size: 72px;;
+    padding-top:100px;
+    padding-bottom: 20px;
+    font-size: 72px;
+    text-decoration-line: overline;
+    text-decoration-color: darkolivegreen;
 }
 
 a {
@@ -31,12 +34,15 @@ header {
 
 .nav-pane {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
-    text-decoration: none;
+    text-decoration:none;
+    font-style:bold;
     display: flex;
     justify-content: space-between;
     width:100%;
+    font-size: 24px;
+    color:forestgreen;
 } 
-/*navigation pane link functions*/ /*cant get them to separate*/
+/*navigation pane link functions*/ 
 li:hover {
     color:greenyellow;
 }
@@ -49,7 +55,7 @@ li:active {
 .nav-section-1 {
     position: relative;
     right:auto;
-    margin-left:20px;
+    margin-left:20px;  
 }
 
 .nav-bar {
@@ -57,29 +63,30 @@ li:active {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+/*Navigation Bar Middle*/
+.intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
+    color:whitesmoke;
+    margin-left: -10%;
+}
 /*Navigation Bar Right*/
 .nav-section-2 {
     text-align: right;
 }
 
 /*Heading*/
-#cover {
-    position: relative;
-}
-
 h1 {
-    margin-left: 50px;
     position: absolute;
-    font-family: 'Homemade Apple', cursive;
+   font-size: 48px;
+   text-decoration-line: overline;
+   text-decoration-color: darkolivegreen;
 }
 
 .heading-image {
-    width:2000px;
-    height: 800px;
-    object-fit: fill;
+    border-top:whitesmoke solid thick; 
+    border-bottom: whitesmoke solid thick;
+    width: 100%;
 }
-
 /*Project Cards*/
 
 /*Featured Card*/
@@ -102,11 +109,11 @@ h1 {
 .featured-image {
     width:1500px;
     height:500px;
-    padding-left:220px;
     opacity: 1;
     display: block;
     transition: 0.5s ease;
     backface-visibility: hidden;
+    border: papayawhip solid thick;
 }
 
 .middle {
@@ -119,84 +126,146 @@ h1 {
     -ms-transform: translate(-50%, -50%);
 }
 .feature-info {
-    background-color: blanchedalmond;
-    color: black;
-    font-size: 16px;
+    background-color: none;
+    color: white;
     padding: 16px 32px;
+    text-align: center;
+    font-size: 48px;
+    margin-top:-25px;
+    font-family: 'Lobster';
 }
 
 .feature-tools {
-    background-color: blanchedalmond;
-    color: black;
-    font-size: 16px;
+    background-color:none;
+    color: white;
     padding: 16px 32px;
+    text-align: center;
+    font-size: 28px;
+    margin-top: -25px;
 }
 
 /*All other cards*/
+.cards:hover .card-image {
+    opacity: 0.3;
+}
+
+.cards:hover .middle-card {
+    opacity: 1;
+}
 .cards {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 1.5%;
     margin-right: auto;
     width: 30%;
 }
 
+.middle-card {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(150%,-300%);
+}
+
 .card-image {
     margin-left: 25px;
-    position: relative;
     width:500px;
-    width: 100%;
     height: 500px;
     opacity: 1;
     display: block;
     transition: 0.5s ease;
     backface-visibility: hidden;
+    border: whitesmoke solid thick;
 }
 
 .card-info {
-    background-color: blanchedalmond;
-    color: black;
-    font-size: 16px;
-    padding: 16px 32px;
+    color: white;
+    font-size: 24px;
 }
 
 .card-tools {
-    background-color: blanchedalmond;
-    color: black;
+    color: white;
     font-size: 16px;
-    padding: 16px 32px;
-}
+    padding-left: 25%;
 }
 
 /*About Me*/
-#about-me {
 
+.pro-pic {
+    height: 500px;
+    width: 350px;
+    margin-left:77px;
+    border: whitesmoke solid thick;
 }
 
-.wrap {
-    display: flex;
+#my-name-is {
+    width: 75%;
+    margin-left: 30%;
+    position: absolute;
+    margin-top:-25%;
+    font-size: 42px;
 }
-
-#bio {
-    display: inline-flex;
+.bio {
     position: absolute;
     padding-left: 100px;
     margin-top:100px;
 }
+.#info-me {
+    
+}
 
-.pro-pic {
-height: 500px;
-width: 350px;
-margin-left:77px;
+#info-fam {
+    
+}
+/*Contact me*/
+.wrap {
+    display: inline-flex;
+    margin-top: -75%;
+    width: 100%;
+}
+
+.phone {
+    width: 50%;
+    margin-right:35%;
+    margin-left:20%;
+
+}
+
+.email {
+    width: 50%;
+    margin-left: -25%;
+    margin-right: 20%;
 }
 
 .contact-type {
-
+    text-align: center; 
+    font-size: 48px;
+    margin-bottom: -20%px;
 }
 
 .personal-contact {
-    display: inline-flex;
+    text-align: center;
+    font-size: 36px;
 }
 
-.contact-info {
-    display: inline;
-}
+/*Media Queries*/
+/*Source- UCD-SAC-VIRT-FSF-PT-06-2021-U-C: 02-Advanced, 01-Activities, 01-Ins_media-query-screen*/
+/* Tablets*/
+@media screen and (max-width: 992px) {
+    .cards {
+      width:50%;
+    }
+  }
+  
+  /* Large smartphones*/
+  @media screen and (max-width: 768px) {
+    .cards {
+      width: 75%;
+    }
+  }
+  
+  /* Small smartphones*/
+  @media screen and (max-width: 576px) {
+    .cards {
+      width: 85%;
+    }
+  }

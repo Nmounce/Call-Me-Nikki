@@ -15,11 +15,13 @@ h2 {
 
 a {
     text-decoration: none;
+    color: whitesmoke;
     display: block;
     margin: 0 auto;
 }
 
 /*Remove hyperlinks in lists*/
+
 ul {
     padding:10px;
     list-style: none;
@@ -40,18 +42,19 @@ header {
     justify-content: space-between;
     width:100%;
     font-size: 24px;
-    color:forestgreen;
 } 
 /*navigation pane link functions*/ 
-li:hover {
+
+a:hover {
     color:greenyellow;
 }
 
-li:active {
+.a:active {
     color:olive;
 }
 
 /*Navigation Bar Left*/
+
 .nav-section-1 {
     position: relative;
     right:auto;
@@ -64,17 +67,20 @@ li:active {
     flex-wrap: wrap;
 }
 /*Navigation Bar Middle*/
+
 .intro {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
     color:whitesmoke;
     margin-left: -10%;
 }
 /*Navigation Bar Right*/
+
 .nav-section-2 {
     text-align: right;
 }
 
 /*Heading*/
+
 h1 {
     position: absolute;
    font-size: 48px;
@@ -113,7 +119,7 @@ h1 {
     display: block;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    border: papayawhip solid thick;
+    border: whitesmoke solid thick;
 }
 
 .middle {
@@ -132,7 +138,6 @@ h1 {
     text-align: center;
     font-size: 48px;
     margin-top:-25px;
-    font-family: 'Lobster';
 }
 
 .feature-tools {
@@ -145,6 +150,7 @@ h1 {
 }
 
 /*All other cards*/
+
 .cards:hover .card-image {
     opacity: 0.3;
 }
@@ -154,8 +160,7 @@ h1 {
 }
 .cards {
     display: inline-flex;
-    margin-left: 1.5%;
-    margin-right: auto;
+    padding:0 0.5% 0 1.5%;
     width: 30%;
 }
 
@@ -164,11 +169,12 @@ h1 {
     opacity: 0;
     position: absolute;
     transform: translate(150%,-300%);
+    margin-left:-5%;
 }
 
 .card-image {
     margin-left: 25px;
-    width:500px;
+    width:100%;
     height: 500px;
     opacity: 1;
     display: block;
@@ -189,34 +195,40 @@ h1 {
 }
 
 /*About Me*/
-
+#about-me {
+    margin-bottom:5%;
+}
+.mine {
+    width: 100%;
+}
 .pro-pic {
     height: 500px;
     width: 350px;
-    margin-left:77px;
+    margin:0 5% 0 15%;
     border: whitesmoke solid thick;
+    float: left;
+}
+
+.bio {
+  margin: 5% 10% 0 5%;
+  font-size: x-large;
+  padding-left: 20%;
 }
 
 #my-name-is {
-    width: 75%;
-    margin-left: 30%;
-    position: absolute;
-    margin-top:-25%;
-    font-size: 42px;
+    font-size: xx-large;
+    margin-left: 15%;
 }
-.bio {
-    position: absolute;
-    padding-left: 100px;
-    margin-top:100px;
-}
-.#info-me {
-    
+
+#info-me {
+    margin-left:15%;
 }
 
 #info-fam {
-    
+    margin-left:15%;
 }
 /*Contact me*/
+
 .wrap {
     display: inline-flex;
     margin-top: -75%;
@@ -225,21 +237,18 @@ h1 {
 
 .phone {
     width: 50%;
-    margin-right:35%;
-    margin-left:20%;
+    margin: 0 35% 0 20%;
 
 }
 
 .email {
     width: 50%;
-    margin-left: -25%;
-    margin-right: 20%;
+    margin: 0 20% 10% -25%;
 }
 
 .contact-type {
     text-align: center; 
     font-size: 48px;
-    margin-bottom: -20%px;
 }
 
 .personal-contact {
@@ -247,25 +256,74 @@ h1 {
     font-size: 36px;
 }
 
+/*Footer*/
+
+#footer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: darkolivegreen;
+    background-color: black;
+    border-top:whitesmoke solid thick;
+    text-align: center;
+    padding-top:0.8%;
+}
+
+
 /*Media Queries*/
-/*Source- UCD-SAC-VIRT-FSF-PT-06-2021-U-C: 02-Advanced, 01-Activities, 01-Ins_media-query-screen*/
-/* Tablets*/
-@media screen and (max-width: 992px) {
-    .cards {
-      width:50%;
+
+/*Source- https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .body {
+        background-color:rgb(11, 9, 12);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: auto;
+        text-wrap: wrap;
+        font-size:medium;
+        color: whitesmoke;
     }
-  }
-  
-  /* Large smartphones*/
-  @media screen and (max-width: 768px) {
-    .cards {
-      width: 75%;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .body {
+        background-color:rgb(11, 9, 12);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: auto;
+        text-wrap: wrap;
+        font-size:medium;
+        color: whitesmoke;
     }
-  }
-  
-  /* Small smartphones*/
-  @media screen and (max-width: 576px) {
-    .cards {
-      width: 85%;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .body {
+        background-color:rgb(11, 9, 12);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: auto;
+        text-wrap: wrap;
+        font-size:medium;
+        color: whitesmoke;
     }
-  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .body {
+        background-color:rgb(11, 9, 12);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: auto;
+        text-wrap: wrap;
+        font-size:medium;
+        color: whitesmoke;  
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .body {
+        background-color:rgb(11, 9, 12);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: auto;
+        text-wrap: wrap;
+        font-size:medium;
+        color: whitesmoke;
+    }
+}

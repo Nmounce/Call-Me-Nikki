@@ -6,7 +6,6 @@ body {
 
 h2 {
     text-align: center;
-    padding-top:100px;
     padding-bottom: 20px;
     font-size: 72px;
     text-decoration-line: overline;
@@ -26,11 +25,6 @@ ul {
     padding:10px;
     list-style: none;
 }
-
-li {
-    margin:0 5px;
-}
-
 /*Navigation Pane*/
 
 
@@ -62,10 +56,14 @@ a:hover {
     display: flex;
 }
 
+li {
+    padding:1%;
+}
 .nav-section-1 {
     position: relative;
-    right:auto;
-    margin-left:20px;  
+    margin:auto;
+    display: flex;
+    justify-content: center;
 }
 
 /*Navigation Bar Middle*/
@@ -75,11 +73,17 @@ a:hover {
     color:whitesmoke;
     width: 100%;
     text-align: center;
+    text-decoration-line: overline;
+    text-decoration-color: darkolivegreen;
 }
 /*Navigation Bar Right*/
 
 .nav-section-2 {
+    position: relative;
     margin:auto;
+    margin-left:1%;
+    display: flex;
+    justify-content: center;
 }
 
 /*Heading*/
@@ -102,7 +106,6 @@ h1 {
 #featured-project {
     display: inline-flex;
     width: 100%;
-    padding-bottom:100px;
     position: relative;
 }
 
@@ -115,9 +118,10 @@ h1 {
 }
 
 .featured-image {
-    width:1500px;
+    width:80%;
     opacity: 1;
-    display: block;
+    display: flex;
+    margin: auto;
     transition: 0.5s ease;
     backface-visibility: hidden;
     border: whitesmoke solid thick;
@@ -197,52 +201,28 @@ h1 {
 #about-me {
     margin-bottom:5%;
 }
-.mine {
-    width: 100%;
-}
+
 .pro-pic {
-    height: 500px;
-    width: 350px;
-    margin:0 5% 0 15%;
+    height: 450px;
+    width: 325px;
+    margin:0 2% 0 5%;
     border: whitesmoke solid thick;
     float: left;
 }
 
 .bio {
-  margin: 5% 10% 0 5%;
   font-size: x-large;
-  padding-left: 20%;
+  line-height: 1;
+  width: 100%;
 }
 
 #my-name-is {
     font-size: xx-large;
-    margin-left: 15%;
-}
-
-#info-me {
-    margin-left:15%;
-}
-
-#info-fam {
-    margin-left:15%;
 }
 /*Contact me*/
 
 .wrap {
-    display: inline-flex;
-    margin-top: -75%;
     width: 100%;
-}
-
-.phone {
-    width: 50%;
-    margin: 0 35% 0 20%;
-
-}
-
-.email {
-    width: 50%;
-    margin: 0 20% 10% -25%;
 }
 
 .contact-type {
@@ -284,17 +264,40 @@ h1 {
     .nav-pane {
         flex-direction: column;
     }
+    .nav-section-1 {
+        display: flex;
+        justify-content: center;
+    }
+    .heading-image {
+        height: 400px;
+    }
     h1 {
         margin:0;
     }
     .featured-image {
-        width: 100%;
+        width: 95%;
+        height: 500px;
     }
     a {
         width: 100%;
     }
     .cards {
-        width:100%;
+        width:97%;
+    }
+    .card-image {
+        width: 95%;
+    }
+    .pro-pic {
+        width: 97%;
+        margin: 1%;
+    }
+    .my-name-is {
+        margin: auto;
+        text-align: center;
+    }
+    p {
+        margin:auto;
+        text-align: center;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -307,8 +310,14 @@ h1 {
         font-size:medium;
         color: whitesmoke;
     }
+    .featured-project {
+        padding-bottom: 100px;
+    }
     .card-image {
         margin-left: 25px;
         width: 100%;
+    }
+    h2 {
+        padding-top: 100px;
     }
 }

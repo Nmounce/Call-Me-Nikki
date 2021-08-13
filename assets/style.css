@@ -15,8 +15,12 @@ h2 {
 a {
     text-decoration: none;
     color: whitesmoke;
-    display: block;
     margin: 0 auto;
+    display: flex;
+}
+
+nav {
+    width: 300px;
 }
 
 /*Remove hyperlinks in lists*/
@@ -321,3 +325,52 @@ h1 {
         padding-top: 100px;
     }
 }
+
+
+
+
+
+
+
+/* 1024 */
+@media only screen and (max-width: 1024px) {
+
+    header { width: 8%; }
+    
+    }
+    
+    /* 768 */
+    @media only screen and (max-width: 768px) {
+    
+    header { width: 10%; }
+    
+    }
+    
+    /* 480 */
+    @media only screen and (max-width: 480px) {
+    
+    .main { width: 90%; }
+    
+    
+    /* 320 */
+    @media only screen and (max-width: 320px) {
+     header {
+     width: 15%;
+    }
+    }
+
+.overlay {
+        width: 100%;
+        background: #384047;
+        opacity: .85;
+        z-index: 1;
+        height: 100%;
+        position: fixed;
+        display: none;
+      }
+
+.push {
+        margin-left: 240px;
+        margin-right: -240px;
+        transition: .3s ease-in;
+      }

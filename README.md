@@ -19,11 +19,14 @@ Dominique "Nikki" Mounce Professional Portfolio
     Current maintainers:
     *Dominique Mounce (Nmounce)- https://github.com/Nmounce/
 
-##Conbtributing
+##Contributing
     Shout out to Ryan Skog, TA and all around knowedgable guy who helped troubleshoot and de-bug issues within this module.
 
 ##Project status
     Development is currently underway as part of an on-going project.
+
+##Sources
+https://mmenujs.com/tutorials/dynamic-content.html
 
 ##License
     CC0 1.0 Universal

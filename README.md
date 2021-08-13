@@ -27,6 +27,7 @@ Dominique "Nikki" Mounce Professional Portfolio
 
 ##Sources
 https://mmenujs.com/tutorials/dynamic-content.html
+https://stackoverflow.com/questions/54706080/generating-dynamic-html-cards-from-a-javascript-array
 
 ##License
     CC0 1.0 Universal

@@ -12,35 +12,50 @@ h2 {
     text-decoration-color: darkolivegreen;
 }
 
+/*Navigation Pane*/
 a {
     text-decoration: none;
-    color: whitesmoke;
-    margin: 0 auto;
+    color: black;
     display: flex;
 }
 
+.links {
+    background-color:olivedrab;
+    padding: 0 2%;
+}
 nav {
     width: 300px;
+    display: inline-flex;
 }
 
-/*Remove hyperlinks in lists*/
 
 ul {
     padding:10px;
     list-style: none;
 }
-/*Navigation Pane*/
-
 
 .nav-pane {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold green;
     text-decoration:none;
     font-style:bold;
-    display: flex;
     justify-content: space-between;
     width:100%;
     font-size: 24px;
-} 
+}
+
+.main {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: -2%;
+}
+#nav-bar-left {
+    margin-left: 1%;
+}
+#nav-bar-right {
+    margin-right: -1%;
+}
+
 /*navigation pane link functions*/ 
 
 a:hover {
@@ -51,24 +66,6 @@ a:hover {
     color:olive;
 }
 
-/*Navigation Bar Left*/
-#first-list {
-    display: flex;
-}
-
-#second-list {
-    display: flex;
-}
-
-li {
-    padding:1%;
-}
-.nav-section-1 {
-    position: relative;
-    margin:auto;
-    display: flex;
-    justify-content: center;
-}
 
 /*Navigation Bar Middle*/
 
@@ -80,15 +77,7 @@ li {
     text-decoration-line: overline;
     text-decoration-color: darkolivegreen;
 }
-/*Navigation Bar Right*/
 
-.nav-section-2 {
-    position: relative;
-    margin:auto;
-    margin-left:1%;
-    display: flex;
-    justify-content: center;
-}
 
 /*Heading*/
 
@@ -102,12 +91,13 @@ h1 {
     border-top:whitesmoke solid thick; 
     border-bottom: whitesmoke solid thick;
     width: 100%;
+    margin-bottom: -8%;
 }
 /*Project Cards*/
 
 /*Featured Card*/
 
-#featured-project {
+/* #featured-project {
     display: inline-flex;
     width: 100%;
     position: relative;
@@ -156,7 +146,7 @@ h1 {
     text-align: center;
     font-size: 28px;
     margin-top: -25px;
-}
+} */
 
 /*All other cards*/
 
@@ -167,10 +157,14 @@ h1 {
 .cards:hover .middle-card {
     opacity: 1;
 }
-.cards {
+/* .cards {
     display: inline-flex;
     padding:0 0.5% 0 1.5%;
     width: 30%;
+}
+
+#card-container {
+    width: 100%;
 }
 
 .middle-card {
@@ -199,8 +193,13 @@ h1 {
     color: white;
     font-size: 16px;
     padding-left: 25%;
-}
+} */
 
+.card {
+    padding:1rem;
+    border: 1px solid white;
+    margin: 1rem;
+}
 /*About Me*/
 #about-me {
     margin-bottom:5%;
@@ -318,7 +317,6 @@ h1 {
         padding-bottom: 100px;
     }
     .card-image {
-        margin-left: 25px;
         width: 100%;
     }
     h2 {
@@ -358,16 +356,6 @@ h1 {
      width: 15%;
     }
     }
-
-.overlay {
-        width: 100%;
-        background: #384047;
-        opacity: .85;
-        z-index: 1;
-        height: 100%;
-        position: fixed;
-        display: none;
-      }
 
 .push {
         margin-left: 240px;

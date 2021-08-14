@@ -88,23 +88,14 @@ const cardDisplay = [{
   const container = document.querySelector("#project-cards");
   cardDisplay.forEach((result, idx) => {
     const cards= document.createElement("div");
-    cards.classList = "card-body";
+    cards.classList = "all-projects";
     const content = `
-      <div class="card">
-      <div class="card-text" id="heading-${idx}">
-        <h5 class="card-title">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-${idx}" aria-expanded="true" aria-controls="collapse-${idx}">
-        </h5>
-      </div>
-      <div id="collapse-${idx}" class="collapse show" aria-label="heading-${idx}" data-parent="#project-cards">
-        <div class="card-body">
-          <h5>${result.title}</h5>
-          <p>${result.description}</p>
-          <a>${result.image}</a>
-          <a>${result.link}</a>
-        </div>
-    </div>
-  </div>`;
+      <div class="each-card">
+        <a id="image" ${result.image}</a>
+          <a id="link" ${result.link}</a>
+        <h5 id="title">${result.title}</h5>
+          <p id="desc">${result.description}</p>
+      </div>`;
 
   container.innerHTML += content;
 });

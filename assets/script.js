@@ -24,78 +24,51 @@ $(document).ready(function () {
     });
   });
 
-//create feature card
-const featureDisplay = [{
-  image: "<a href='https://nmounce.github.io/01-Homework/' target='_blank'><img class='featured-image' src='./Portfolio/card-2.jpg'  alt='white smoke'></a>",
-  title: "ftitle",
-  description: "fdesc"
-}];
-
-const featureContainer = document.querySelector("#feature-card");
-  featureDisplay.forEach((result, idx) => {
-    const fCard= document.createElement("div");
-    fCard.classList = "f-card-body";
-    const fContent = `
-      <div class="feature-proj-card">
-        <a class="featured-image"></a>
-        <div class="feature-proj-text" id="heading-${idx}">
-          <h5 class="feature-proj-title">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-${idx}" aria-expanded="true" aria-controls="collapse-${idx}">
-              <a class='featured-link'></a>
-            </h5>
-        </div>
-      </div>
-      <div id="collapse-${idx}" class="collapse show" aria-label="heading-${idx}" data-parent="#project-cards">
-        <div class="card-body">
-          <a>${result.image}</a>
-          <h5>${result.title}</h5>
-          <p>${result.description}</p>
-        </div>
-    </div>
-  </div>`;
-
-  featureContainer.innerHTML += fContent;
-});
-
 //create cards
 
 const cardDisplay = [{
+  title: "Melifluous",
+  description: "Music Search App",
+  image: "<img class='card-image' id='featured-image' src='./Portfolio/card-2.jpg' alt='pink smoke'><a class='cards' href='#' target='_blank'></a></img>"
+}, {
   title: "title1",
   description: "desc1",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-1.jpg' alt='blue smoke'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-1.jpg' alt='blue smoke'><a class='cards' href='#' target='_blank'></a></img>"
 }, {
   title: "title2",
   description: "desc2",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-3.jpg' alt='pink smoke'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-3.jpg' alt='pink smoke'><a class='cards' href='#' target='_blank'></a></img>"
 }, {
   title: "title3",
   description: "desc3",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-6.jpg' alt='yellow smoke'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-6.jpg' alt='yellow smoke'><a class='cards' href='#' target='_blank'></a></img>"
 }, {
   title: "title4",
   description: "desc4",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-5.jpg' alt='green smoke'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-5.jpg' alt='green smoke'><a class='cards' href='#' target='_blank'></a></img>"
 }, {
   title: "title5",
   description: "desc5",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-4.jpg' alt='orange smoke'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-4.jpg' alt='orange smoke'><a class='cards' href='#' target='_blank'></a></img>"
 }, {
   title: "title6",
   description: "desc6",
-  image: "<a class='cards' href='#' target='_blank'><img class='card-image' src='./Portfolio/card-6alt.jpg' alt='#'></a>"
+  image: "<img class='card-image' src='./Portfolio/card-6alt.jpg' alt='#'><a class='cards' href='#' target='_blank'></a></img>"
 }];
 
   const container = document.querySelector("#project-cards");
-  cardDisplay.forEach((result, idx) => {
+  cardDisplay.forEach((result) => {
     const cards= document.createElement("div");
     cards.classList = "all-projects";
     const content = `
-      <div class="each-card">
-        <a id="image" ${result.image}</a>
-          <a id="link" ${result.link}</a>
-        <h5 id="title">${result.title}</h5>
-          <p id="desc">${result.description}</p>
-      </div>`;
+        <div class="all-cards">
+          <img class="card">${result.image}</img>
+          <div class="text-block">
+            <h5 class="title">${result.title}</h5>
+              <p class="desc">${result.description}</p>
+          </div>
+
+        </div>`;
 
   container.innerHTML += content;
 });

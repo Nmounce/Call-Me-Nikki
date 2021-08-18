@@ -67,10 +67,8 @@ const cardDisplay = [{
           <img class="card">${result.image}</img>
           <div class="text-block">
             <a href="${result.location}">
-              <button class="all-btns">
-                <h5 class="title">${result.title}</h5>
-                <p class="desc">${result.description}</p>
-              </button>
+              <h5 class="title">${result.title}</h5>
+              <p class="desc">${result.description}</p>
             </a>
           </div>
         </div>`;

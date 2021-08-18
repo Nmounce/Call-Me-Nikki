@@ -116,6 +116,9 @@ h2 {
     height: 500px;
     width: 100%;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .featured-text-block:hover {
@@ -135,15 +138,13 @@ h2 {
 }
 
 .featured-title {
-    margin-top:20%;
     margin-bottom: -2%;
     font-size: xxx-large;
     backface-visibility: hidden;
     text-align: center;
 }
 
-.desc {
-    font-size: xx-large;
+.feature-desc {
     font-size: xx-large;
 }
 
@@ -180,13 +181,18 @@ h2 {
     height: 300px;
     width: 100%;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title {
-    margin-top:50%;
-    margin-bottom: 10%;
     font-size: x-large;
     backface-visibility: hidden; 
     text-align: center;
+}
+
+.desc {
+    font-size: larger;
 }
 
 .text-block:hover {
@@ -276,4 +282,18 @@ p {
     padding-top:0.8%;
 }
 
+/*Small devices */
+@media only screen and (max-width: 600px) {
+    .bio-text {width: 68%;}
+    .about-bg-pic {height: 750px;}
+};
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bio-text {
+        width: 68%;
+    };
+    .about-bg-pic {
+        height: 750px;
+    };
+};

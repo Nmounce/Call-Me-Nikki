@@ -3,7 +3,9 @@ Dominique "Nikki" Mounce Professional Portfolio
 
 
 ##Introduction
-    The "call-me-nikki" webpage was designed as a professional profile template to feature the work and portfolio of Nikki Mounce (URL ""). This project fetures basic HTML and CSS elements such aas navigation links, selector cards with hover feature that navigate to external sites (to come) and a responsive layout that adapts to multiple viewports. 
+    The "call-me-nikki" webpage was designed as a professional profile template to feature the work and portfolio of Nikki Mounce (URL ""). This project fetures basic HTML and CSS elements such as navigation links, selector cards with hover feature that navigate to external sites and a responsive layout that adapts to multiple viewports.
+
+    <img src="C:\Users\nikki\Bootcamp\call-me-nikki\Call-Me-Nikki\assets\Portfolio\readmeimg.PNG">
 
 ##Usage 
     This module is intended as a generic container for a professional portfolio, usage outside of this intention is encouraged. 
@@ -20,7 +22,7 @@ Dominique "Nikki" Mounce Professional Portfolio
     *Dominique Mounce (Nmounce)- https://github.com/Nmounce/
 
 ##Contributing
-    Shout out to Ryan Skog, TA and all around knowedgable guy who helped troubleshoot and de-bug issues within this module.
+    Shout out to UC Davis Coding BootCamp Instructors and TA's- all around knowledgeable guys who helped troubleshoot and de-bug issues within this module.
 
 ##Project status
     Development is currently underway as part of an on-going project.
@@ -28,6 +30,7 @@ Dominique "Nikki" Mounce Professional Portfolio
 ##Sources
 https://mmenujs.com/tutorials/dynamic-content.html
 https://stackoverflow.com/questions/54706080/generating-dynamic-html-cards-from-a-javascript-array
+https://giphy.com/
 
 ##License
     CC0 1.0 Universal
